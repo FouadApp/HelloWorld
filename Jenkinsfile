@@ -1,10 +1,10 @@
-pipeline { 
-agent any  
+pipeline {
+agent any
 stages {
-         stage("Prepare"){ 
+         stage("Prepare"){
        steps{
          sh '''
-           echo "Prepare continuous delivery env"
+           test_jenkins.sh
            '''
          }
      }
