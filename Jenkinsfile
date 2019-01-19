@@ -1,9 +1,9 @@
 pipeline {
 
-agent  {
+agent {
+
+    label 'slave_2'
   
-    label ''
-   // customWorkspace '/Stage/fares/slave_1'
   
 }
 
