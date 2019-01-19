@@ -1,5 +1,13 @@
 pipeline {
-agent any
+
+agent {
+
+    label 'slave_1'
+    customWorkspace '/Stage/fares/slave_1'
+  
+}
+
+
 stages {
          stage("Prepare"){
        steps{
