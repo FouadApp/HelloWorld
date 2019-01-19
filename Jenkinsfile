@@ -4,7 +4,7 @@ stages {
          stage("Prepare"){
        steps{
          sh '''
-           test_jenkins.sh
+           sh ./test_jenkins.sh
            '''
          }
      }
