@@ -1,7 +1,7 @@
-pipeline { (1)
-agent any  (2)
+pipeline { 
+agent any  
 stages {
-         stage("Prepare"){ (3)
+         stage("Prepare"){ 
        steps{
          sh '''
            echo "Prepare continuous delivery env"
@@ -16,4 +16,7 @@ stages {
          '''
        }
      }
+}
+
+
 }
