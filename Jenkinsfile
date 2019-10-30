@@ -5,18 +5,11 @@ pipeline {
 
 
 stages {
-         stage("Prepare"){
-       steps{
-         sh '''
-           sh ./test_jenkins.sh
-           '''
-         }
-     }
 
-     stage ("Build"){
+     stage ("Test"){
        steps {
          sh '''
-           echo "Building app"
+           echo "Hellow World"
          '''
        }
      }
