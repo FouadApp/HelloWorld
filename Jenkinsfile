@@ -40,7 +40,7 @@ pipeline {
                 stage('DEPLOY JAR ROUTER ON SLAVE 2') {
                     agent {
                         node {
-                            label 'se'
+                            label 'slave1'
                             customWorkspace "${env.WORKSPACE}/${env.JOB_NAME}_${env.BUILD_ID}"
                         }
                     }
@@ -75,7 +75,7 @@ pipeline {
                 stage('DEPLOY JAR FRONT ON SLAVE 3') {
                     agent {
                         node {
-                            label 'se'
+                            label 'slave2'
                             customWorkspace "${env.WORKSPACE}/${env.JOB_NAME}_${env.BUILD_ID}"
                         }
                     }
