@@ -11,7 +11,7 @@ pipeline {
                         }
                     }
                     steps {
-                        sh ' echo "your command copy file " '
+                        echo 'your command copy file'
                     }
                     post {
 
@@ -45,7 +45,7 @@ pipeline {
                         }
                     }
                     steps {
-                        sh 'echo " your command copy file router.jar"   '
+                        echo 'your command copy file router.jar '
                     }
                     post {
 
@@ -80,7 +80,7 @@ pipeline {
                         }
                     }
                     steps {
-                        sh 'echo " your command copy file front.jar"   '
+                        echo 'your command copy file front.jar '
                     }
                     post {
 
