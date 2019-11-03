@@ -13,6 +13,28 @@ pipeline {
                     steps {
                         echo 'your command copy file'
                     }
+                    post {
+
+                        always {
+                            echo "-----------------------------------THE END ------------------------------"
+                        }
+
+
+                        failure {
+                            echo 'failure:  Error when executing : thank you to consult the logs on Jenkins  '
+
+                        }
+
+                        success {
+
+                            echo '         *********** Build and deploy to nexus  was a success ***************************'
+
+                            deleteDir()
+                            echo '   Delete workspace  ${env.JOB_NAME}   was a success'
+
+                        }
+
+                    }
 
 
                 }
@@ -26,6 +48,28 @@ pipeline {
                     steps {
                         echo 'your command copy file router.jar '
                     }
+                    post {
+
+                        always {
+                            echo "-----------------------------------THE END ------------------------------"
+                        }
+
+
+                        failure {
+                            echo 'failure:  Error when executing : thank you to consult the logs on Jenkins  '
+
+                        }
+
+                        success {
+
+                            echo '         *********** Build and deploy to nexus  was a success ***************************'
+
+                            deleteDir()
+                            echo '   Delete workspace  ${env.JOB_NAME}   was a success'
+
+                        }
+
+                    }
 
 
                 }
@@ -38,6 +82,28 @@ pipeline {
                     }
                     steps {
                         echo 'your command copy file front.jar '
+                    }
+                    post {
+
+                        always {
+                            echo "-----------------------------------THE END ------------------------------"
+                        }
+
+
+                        failure {
+                            echo 'failure:  Error when executing : thank you to consult the logs on Jenkins  '
+
+                        }
+
+                        success {
+
+                            echo '         *********** Build and deploy to nexus  was a success ***************************'
+
+                            deleteDir()
+                            echo '   Delete workspace  ${env.JOB_NAME}   was a success'
+
+                        }
+
                     }
 
 
